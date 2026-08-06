@@ -30,6 +30,7 @@ NAVBAR
 =========================== */
 
 .navbar{
+    height: 80px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -90,7 +91,7 @@ HERO
 
 .hero{
 
-    min-height:90vh;
+    min-height: calc(100vh - 80px);
 
     display:flex;
 
@@ -242,4 +243,121 @@ font-size:16px;
 flex-direction:column;
 
 }
+}
+
+/*==============================
+ABOUT
+==============================*/
+
+.about{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:150px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.about-image{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.about-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.section-title{
+
+    letter-spacing:5px;
+
+    color:#888;
+
+    margin-bottom:20px;
+
+}
+
+.about h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:54px;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+}
+
+.about-content p{
+
+    color:#666;
+
+    font-size:17px;
+
+    margin-bottom:40px;
+
+}
+
+.about-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.stat h3{
+
+    font-size:42px;
+
+    margin-bottom:8px;
+
+}
+
+.stat span{
+
+    color:#666;
+
+}
+
+@media(max-width:900px){
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+.about h2{
+
+font-size:40px;
+
+}
+
 }
