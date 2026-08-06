@@ -361,3 +361,122 @@ font-size:40px;
 }
 
 }
+
+/*==============================
+SERVICES
+==============================*/
+
+.services{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:150px auto;
+
+}
+
+.center{
+
+    text-align:center;
+
+}
+
+.section-heading{
+
+    text-align:center;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:52px;
+
+    margin-bottom:70px;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    border:1px solid #ddd;
+
+    padding:45px;
+
+    transition:.35s;
+
+    background:#fff;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.service-icon{
+
+    font-size:45px;
+
+    margin-bottom:25px;
+
+}
+
+.service-card h3{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    line-height:1.8;
+
+}
+
+.service-card a{
+
+    color:black;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.service-card a:hover{
+
+    letter-spacing:1px;
+
+}
+
+@media(max-width:900px){
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-heading{
+
+font-size:40px;
+
+}
+
+}
