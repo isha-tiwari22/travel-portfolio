@@ -1343,3 +1343,73 @@ SCROLL PROGRESS BAR
     transition:width .1s linear;
 
 }
+
+/*====================================
+FAQ
+====================================*/
+
+.faq{
+
+    width:90%;
+    max-width:900px;
+    margin:150px auto;
+
+}
+
+.faq-item{
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.faq-question{
+
+    width:100%;
+    background:none;
+    border:none;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 0;
+
+    cursor:pointer;
+
+    font-size:20px;
+    font-weight:600;
+
+    text-align:left;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+    color:#666;
+
+    padding-bottom:25px;
+
+    line-height:1.8;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:220px;
+
+}
+
+.faq-item.active span{
+
+    transform:rotate(45deg);
+
+}
