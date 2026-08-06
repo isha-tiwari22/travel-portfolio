@@ -14,6 +14,8 @@ html{
 
 body{
 
+    padding-top:90px;
+
     font-family:'Poppins',sans-serif;
 
     background:white;
@@ -28,20 +30,24 @@ NAVBAR
 =========================== */
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    width:90%;
+    width: 90%;
+    max-width: 1200px;
 
-    max-width:1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    margin:auto;
+    padding: 25px 0;
 
-    display:flex;
+    background: rgba(255,255,255,.9);
+    backdrop-filter: blur(12px);
 
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:30px 0;
+    z-index: 1000;
 }
 
 .logo{
@@ -164,7 +170,11 @@ HERO
 
 .btn-dark:hover{
 
-    transform:translateY(-3px);
+    background:#222;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
 .btn-light{
@@ -185,6 +195,10 @@ HERO
     background:black;
 
     color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
 /* ===========================
