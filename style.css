@@ -588,3 +588,83 @@ height:320px;
 }
 
 }
+
+/*==============================
+STATISTICS
+==============================*/
+
+.statistics{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:150px auto;
+
+    text-align:center;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.counter-box{
+
+    border:1px solid #ddd;
+
+    padding:50px 20px;
+
+    transition:.35s;
+
+}
+
+.counter-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.counter{
+
+    font-size:60px;
+
+    font-family:'Playfair Display',serif;
+
+    margin-bottom:15px;
+
+}
+
+.counter-box p{
+
+    color:#666;
+
+}
+
+@media(max-width:900px){
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
