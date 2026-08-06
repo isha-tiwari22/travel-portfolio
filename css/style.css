@@ -1520,3 +1520,45 @@ width:100%;
 }
 
 }
+
+/*====================================
+BACK TO TOP
+====================================*/
+
+#backToTop{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:black;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    transition:.3s;
+
+    z-index:1000;
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-4px);
+
+}
