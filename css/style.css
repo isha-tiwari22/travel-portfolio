@@ -1319,3 +1319,27 @@ gap:20px;
     }
 
 }
+
+/*====================================
+SCROLL PROGRESS BAR
+====================================*/
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:black;
+
+    z-index:9999;
+
+    transition:width .1s linear;
+
+}
